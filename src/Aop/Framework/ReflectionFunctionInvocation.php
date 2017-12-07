@@ -124,7 +124,7 @@ class ReflectionFunctionInvocation extends AbstractInvocation implements Functio
      *
      * @return string
      */
-    final public function __toString()
+    final public function __toString(): string
     {
         return sprintf(
             'execution(%s())',

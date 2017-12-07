@@ -58,7 +58,7 @@ abstract class AbstractProxy
      *
      * @return string
      */
-    abstract public function __toString();
+    abstract public function __toString(): string;
 
     /**
      * Indent block of code
@@ -141,8 +141,8 @@ abstract class AbstractProxy
         $flattenAdvices = [];
         foreach ($advices as $type => $typedAdvices) {
             foreach ($typedAdvices as $name => $concreteAdvices) {
-                if (is_array($concreteAdvices)) {
-                    $flattenAdvices[$type][$name] = array_keys($concreteAdvices);
+                if (\is_array($concreteAdvices)) {
+                    $flattenAdvices[$type][$name] = \array_keys($concreteAdvices);
                 }
             }
         }

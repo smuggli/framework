@@ -117,7 +117,7 @@ BODY;
     /**
      * {@inheritDoc}
      */
-    public function __toString()
+    public function __toString(): string
     {
         $classCode = (
             $this->class->getDocComment() . "\n" . // Original doc-block

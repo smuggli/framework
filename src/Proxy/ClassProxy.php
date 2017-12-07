@@ -398,7 +398,7 @@ class ClassProxy extends AbstractProxy
     /**
      * {@inheritDoc}
      */
-    public function __toString()
+    public function __toString(): string
     {
         $ctor = $this->class->getConstructor();
         if ($this->isFieldsIntercepted && (!$ctor || !$ctor->isPrivate())) {

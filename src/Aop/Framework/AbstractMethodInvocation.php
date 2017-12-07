@@ -133,7 +133,7 @@ abstract class AbstractMethodInvocation extends AbstractInvocation implements Me
      *
      * @return string
      */
-    final public function __toString()
+    final public function __toString(): string
     {
         return sprintf(
             'execution(%s%s%s())',

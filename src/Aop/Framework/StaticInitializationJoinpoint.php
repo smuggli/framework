@@ -96,7 +96,7 @@ class StaticInitializationJoinpoint extends AbstractJoinpoint
      *
      * @return string
      */
-    final public function __toString()
+    final public function __toString(): string
     {
         return sprintf(
             'staticinitialization(%s)',

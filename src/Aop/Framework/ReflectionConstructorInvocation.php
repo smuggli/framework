@@ -133,7 +133,7 @@ class ReflectionConstructorInvocation extends AbstractInvocation implements Cons
      *
      * @return string
      */
-    final public function __toString()
+    final public function __toString(): string
     {
         return sprintf(
             'initialization(%s)',

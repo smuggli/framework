@@ -124,7 +124,7 @@ class FunctionProxy extends AbstractProxy
     /**
      * {@inheritDoc}
      */
-    public function __toString()
+    public function __toString(): string
     {
         $functionsCode = (
             "<?php\n" . // Start of file header
